@@ -22,18 +22,8 @@ const MonstroData = {
 
 const FooterMenu = [
     {
-        "category": "Who We Help",
-        "items": [
-            { "name": "Martial Arts Schools", "href": "#" },
-            { "name": "Gymnastics Gyms", "href": "#" },
-            { "name": "Dance Studios", "href": "#" }
-        ]
-    },
-
-    {
         "category": "Support & Legal",
         "items": [
-            { "name": "Support", "href": "https://mymonstroapp.com/support" },
             { "name": "Contact Us", "href": "/contact" },
             { "name": "Privacy Policy", "href": "/legal/privacy-policy" },
             { "name": "Term of Use", "href": "/legal/term-of-use" }
