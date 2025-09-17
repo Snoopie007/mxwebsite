@@ -3,17 +3,17 @@ import Image from "next/image";
 
 const CommonProblems = [
     {
-        title: "Lack of engagement",
-        description: "Most member management software are made for gyms and studios, but not to keep your members engaged and coming back.",
+        title: "No Motivation to Stay Consistent",
+        description: "Most platforms only track attendance — they don't incentivize it. Members have no reason to keep showing up when life gets busy.",
     },
     {
-        title: "Inefficient Billing System",
-        description: "Most member management software fails to reduce churn because they don't understand the root cause of churn.",
+        title: "Lack of Real-Time Engagement",
+        description: "Once someone checks in or completes a class, the experience ends. No community, no feedback loops, no excitement between sessions.",
     },
 
     {
-        title: "Messy Class Schedule Management",
-        description: "Most member management software fails to reduce churn because they don't understand the root cause of churn.",
+        title: "No Built-In Retention Engine",
+        description: "They're designed for management, not momentum. There's no system that rewards loyalty, recognizes effort, or drives referrals.",
     },
 
 
@@ -21,16 +21,16 @@ const CommonProblems = [
 
 const MonstroSolutions = [
     {
-        title: "Gamification",
-        description: "Monstro-X uses gamification to keep your members engaged and coming back . Allowing your members to track their achievements and rewards.",
+        title: "Points-Based Progress System",
+        description: "Monstro‑X rewards members for every meaningful action—checking in, completing profiles, cheering others on, or posting wins. It's like XP for showing up.",
     },
     {
-        title: "AI Assistant Support",
-        description: "Monstro-X uses AI to help your members with their questions and concerns. ",
+        title: "Community-Powered Gamification",
+        description: "With leaderboards, shoutouts, and chat engagement, members feel like part of something bigger. That emotional connection boosts long-term commitment.",
     },
     {
-        title: "Community & Groups",
-        description: "Build a community with groups and allow your members to connect with each other.",
+        title: "Built-In Rewards & Recognition",
+        description: "From guest passes to private lessons, Monstro‑X turns effort into real perks—without extra work for your staff. Members stay loyal because the app makes them feel seen.",
     },
 ]
 

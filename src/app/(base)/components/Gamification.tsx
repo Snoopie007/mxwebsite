@@ -21,7 +21,7 @@ const SolutionsPoints = [
     },
     {
         title: "Easy Attendance System",
-        description: "No more manual attendance tracking. Monstro-X app has a built in attendance allowing your members to easily check in and out of classes.",
+        description: "No more manual attendance tracking. Monstro-X app has built in attendance allowing your members to easily register and check in for classes.",
         image: "/images/attendance.png",
     },
 
@@ -32,12 +32,12 @@ const SolutionsPoints = [
     },
     {
         title: "AI Assistant Support",
-        description: "Monstro-X uses AI to help your members with their questions and concerns. Allowing you to focus on growing your business.",
+        description: "Monstro-X leverages AI to help your members with their every day questions and concerns, so you can focus on growing your business.",
         image: "/images/ai-assistant.png",
     },
     {
         title: "Analytics & Reports",
-        description: "Monstro-X app has a built in analytics allowing you to know exactly how to improve your business.",
+        description: "Monstro-X app has built in analytics allowing you to know exactly how to improve your business.",
         image: "/images/reports.png",
     }
 
