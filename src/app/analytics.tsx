@@ -1,12 +1,16 @@
 // Analytics.tsx
 import Script from "next/script"
+import { headers } from 'next/headers'
 
 export default function Analytics() {
-    const GTM_ID = 'GTM-W9WW4X2';
+    const GTM_ID = 'GTM-KR7CQJXZ';
 
-    if (process.env.NEXT_PUBLIC_VERCEL_ENV !== "production") {
-        return null
-    }
+
+    // if (process.env.NEXT_PUBLIC_VERCEL_ENV !== "production") {
+    //     return null
+    // }
+
+
 
     return (
         <>

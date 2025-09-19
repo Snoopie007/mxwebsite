@@ -5,9 +5,9 @@ function ContactPage() {
     return (
         <main className=''>
             <section className='max-w-7xl m-auto pt-16 pb-4'>
-                <div className='text-center'>
-                    <h1 className='text-3xl mb-2'>Contact Us</h1>
-                    <p className='text-base'>Need help? Reach out to us.</p>
+                <div className='text-center space-y-1'>
+                    <h1 className='text-2xl font-bold'>Contact Us</h1>
+                    <p className=' text-muted-foreground'>Need help? Reach out to us.</p>
                 </div>
             </section>
             <section>

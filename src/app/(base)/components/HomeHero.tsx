@@ -29,16 +29,16 @@ export function HeroSection() {
                             </p>
                         </div>
                         <div className="flex lg:flex-row flex-col justify-center lg:gap-4 mb-6">
-                            <Button asChild variant="default" size="lg">
+                            <Button asChild variant="default" size="xl">
                                 <Link href="/book-demo">
                                     Book a Demo
                                 </Link>
                             </Button>
-                            <Button asChild variant="default" size="lg">
+                            {/* <Button asChild variant="default" size="lg">
                                 <Link href="/resources/tools/analyzer">
                                     Watch in Action
                                 </Link>
-                            </Button>
+                            </Button> */}
                         </div>
                     </div>
                     <div className="relative overflow-clip w-full max-w-full max-h-[540px] h-full isolate"

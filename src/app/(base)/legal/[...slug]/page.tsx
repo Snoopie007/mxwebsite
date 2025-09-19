@@ -15,8 +15,8 @@ export default async function LegalPage(props: { params: Promise<{ slug: string 
             <div className={"max-w-7xl grid grid-cols-3 m-auto"}>
                 <article className={"col-span-2"}>
 
-                    <div className='content'>
-                        <h1>{page.meta.title}</h1>
+                    <div className=''>
+                        <h1 className="text-2xl font-bold mb-4">{page.meta.title}</h1>
                         <div className=' prose  max-w-full 
                         prose-li:text-base  
                         prose-a:text-base prose-p:text-base prose-p:leading-7 
@@ -31,7 +31,7 @@ export default async function LegalPage(props: { params: Promise<{ slug: string 
                                     h1: ({ children }) => <h1 className="text-3xl font-bold mb-4">{children}</h1>,
                                     h2: ({ children }) => <h2 className="text-2xl font-semibold mb-3 border-b border-gray-200 pb-2">{children}</h2>,
                                     h3: ({ children }) => <h3 className="text-xl font-semibold mb-2">{children}</h3>,
-                                    p: ({ children }) => <p className="mb-4 leading-7">{children}</p>,
+                                    p: ({ children }) => <p className="mb-4  leading-7">{children}</p>,
                                     ul: ({ children }) => <ul className="list-disc list-inside mb-4">{children}</ul>,
                                     ol: ({ children }) => <ol className="list-decimal list-inside mb-4">{children}</ol>,
                                     li: ({ children }) => <li className="mb-1">{children}</li>,

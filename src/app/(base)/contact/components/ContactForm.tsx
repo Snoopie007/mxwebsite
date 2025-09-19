@@ -194,15 +194,15 @@ export default function ContactForm() {
 
                         <Button type='submit'
                             disabled={loading}
-                            className={cn(" children:hidden py-5 text-sm hover:bg-white hover:text-black  font-bold uppercase border-2 border-black", (loading && "children:inline-block"))}>
+                            className={cn("children:hidden ", (loading && "children:inline-block"))}>
                             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                             Send Message
                         </Button>
 
 
                         <p className='legal text-base  font-normal mt-2 mb-4 block'>
-                            By sending this message, you agree to Monstro's
-                            <a href="/legal/privacy-policy" className='text-sm'>Privacy Policy</a>, and opt-in to receive additional email and SMS from Monstro.
+                            By sending this message, you agree to Monstro's {' '}
+                            <a href="/legal/privacy-policy">Privacy Policy</a>, and opt-in to receive additional email and SMS from Monstro.
                         </p>
 
                     </fieldset>

@@ -12,7 +12,7 @@ export function FooterCTA() {
                             FUEL YOUR MEMBERSHIP BUSINESS
                         </div>
                         <div className={cn('text-2xl md:text-5xl leading-tight font-bold text-gray-400')}>
-                            Last week 523 businesses got started with {' '}
+                            Hundreds of businesses got started with {' '}
                             <span className="text-white">Monstro-X</span>
 
 

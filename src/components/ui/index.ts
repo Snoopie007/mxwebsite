@@ -19,5 +19,7 @@ export * from './calendar';
 export * from './separator';
 export * from './TablePage';
 export * from './ToolTip';
+export * from './carousel';
 export * from './ToggleGroup';
 export * from './NavigationMenu';
+export * from './progress';

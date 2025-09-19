@@ -46,8 +46,8 @@ export default function RootLayout({
 
 
             <body className={"font-roboto"}>
-
                 <Analytics />
+
                 <Suspense>
                     {children}
                 </Suspense>
