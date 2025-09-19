@@ -1,5 +1,4 @@
 'use client'
-import VideoTstimonial from "@/(base)/components/VideoTestimonials"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/libs/utils"
 import Script from "next/script"
@@ -90,7 +89,7 @@ export default async function SchedulePage(props: { params: Promise<{ type: stri
 
                 )}
             </section>
-            <VideoTstimonial className="bg-white" />
+            {/* <VideoTstimonial className="bg-white" /> */}
             {params.type === "strategy" && (
                 <section className="bg-gray-100">
                     <div className="max-w-xl m-auto text-center w-full pt-10 pb-20 md:px-0  px-5">

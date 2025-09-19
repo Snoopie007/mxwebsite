@@ -44,7 +44,6 @@ export async function POST(req: NextRequest) {
             await facebook.json()
         }
 
-        const isUKUser = contact.phone.startsWith('+44');
         const mappedCustomFields = Object.entries(contact.customFields).map(([key, value]) => ({ key, field_value: value }))
 
         await admin.post('/api/public/website', {
@@ -54,14 +53,14 @@ export async function POST(req: NextRequest) {
             email: contact.email,
             source: "Website Form",
             tags: ["new lead"],
-            locationId: isUKUser ? "Lu5jNxxWygKP5kFP16Fc" : "KZiVLGj4ZfUh3oKvebul",
+            locationId: "KZiVLGj4ZfUh3oKvebul",
             customFields: mappedCustomFields
         });
 
 
         return NextResponse.json({
             message: 'Success',
-            redirect: isUKUser ? '/book-demo/schedule/uk-demo' : '/book-demo/schedule/demo'
+            redirect: '/book-demo/schedule/demo'
         }, { status: 200 })
     } catch (error) {
         console.log(error)

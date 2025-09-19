@@ -1,6 +1,4 @@
 
-import LandingFooter from '@/app/lp/elements/footer';
-import '@public/landing.scss';
 import Image from 'next/image';
 import logo from "@public/images/logo.png";
 
@@ -26,7 +24,7 @@ export default function SchedulerLayout(
 
             </header>
             {children}
-            <LandingFooter />
+            {/* <LandingFooter /> */}
 
         </main>
     )
