@@ -21,7 +21,7 @@ export function FooterCTA() {
                     <span className="text-white text-2xl md:text-4xl font-bold">  Today, it's your turn.</span>
                 </div>
 
-                <Button asChild variant="default" size="xl">
+                <Button asChild variant="foreground" size="xl" className="font-semibold bg-indigo-600 text-white">
                     <Link href="/book-demo">
                         Book a Demo
                     </Link>
