@@ -56,7 +56,6 @@ export function UserMenu() {
                         Billing
                     </Link>
                 </DropdownMenuItem>
-                <DropdownMenuSeparator />
 
                 <DropdownMenuSeparator />
                 <DropdownMenuItem onClick={logOut} className={cn(MenuItemStyle, 'font-semibold')}>
