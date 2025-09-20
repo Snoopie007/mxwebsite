@@ -76,6 +76,7 @@ const FooterMenu = [
     {
         "category": "Support & Legal",
         "items": [
+            { "name": "Support", "href": "https://support.monstro-x.com" },
             { "name": "Contact Us", "href": "/contact" },
             { "name": "Privacy Policy", "href": "/legal/privacy-policy" },
             { "name": "Term of Use", "href": "/legal/term-of-use" }

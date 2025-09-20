@@ -4,6 +4,7 @@ import { Poppins, Roboto, } from 'next/font/google';
 import { Metadata } from 'next';
 import { Suspense } from 'react';
 import { ThemeProvider } from 'next-themes';
+import { SessionProvider } from 'next-auth/react';
 
 
 const poppins = Poppins({
@@ -45,14 +46,16 @@ export default function RootLayout({
         <html lang="en" className={`${poppins.variable} ${roboto.variable}`}>
 
 
-            <body className={"font-roboto"}>
-                <Analytics />
+            <SessionProvider>
+                <body className={"font-roboto"}>
+                    <Analytics />
 
-                <Suspense>
-                    {children}
-                </Suspense>
+                    <Suspense>
+                        {children}
+                    </Suspense>
 
-            </body>
+                </body>
+            </SessionProvider>
 
         </html>
     )

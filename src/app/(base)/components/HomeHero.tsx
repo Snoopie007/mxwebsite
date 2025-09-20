@@ -29,7 +29,7 @@ export function HeroSection() {
                             </p>
                         </div>
                         <div className="flex lg:flex-row flex-col justify-center lg:gap-4 mb-6">
-                            <Button asChild variant="default" size="xl">
+                            <Button asChild variant="default" size="xl" className="font-semibold z-99">
                                 <Link href="/book-demo">
                                     Book a Demo
                                 </Link>
