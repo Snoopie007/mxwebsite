@@ -39,7 +39,7 @@ export function UserMenu() {
                 </Avatar>
             </DropdownMenuTrigger>
             <DropdownMenuContent align='end' className="w-60 rounded-sm shadow-sm">
-                <DropdownMenuItem className={"flex flex-col items-start justify-start text-xs"}>
+                <DropdownMenuItem className={"flex flex-col items-start justify-start text-sm"}>
                     <span className=" font-semibold">{user.name}</span>
                     <span className=" text-muted-foreground">
                         {user.email}
