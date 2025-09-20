@@ -6,6 +6,7 @@ import MobileNav from "./MobileNav";
 import MainNav from "./nav";
 import { useSession } from "next-auth/react";
 import { Button } from "@/components/ui/button";
+import { AlertMenu, SupportMenu, UserMenu } from "@/components/navs";
 function Header() {
     const { data: session } = useSession();
     console.log(session);
@@ -29,6 +30,9 @@ function Header() {
                                     Dashboard
                                 </Link>
                             </Button>
+                            <AlertMenu />
+                            <SupportMenu />
+                            <UserMenu />
                         </div>
                     ) : (
                         <div className="md:flex md:flex-row  hidden items-center gap-2 justify-end">
