@@ -40,8 +40,8 @@ export function UserMenu() {
             </DropdownMenuTrigger>
             <DropdownMenuContent align='end' className="w-60 rounded-sm shadow-sm">
                 <DropdownMenuItem className={"flex flex-col items-start justify-start text-sm"}>
-                    <span className=" font-semibold">{user.name}</span>
-                    <span className=" text-muted-foreground">
+                    <span className="text-xs font-semibold">{user.name}</span>
+                    <span className="text-xs text-muted-foreground">
                         {user.email}
                     </span>
                 </DropdownMenuItem>
