@@ -24,7 +24,7 @@ function Header() {
                 </div>
                 <div className={"rightNav  "}>
                     {session ? (
-                        <div className="md:flex md:flex-row  hidden items-center justify-end">
+                        <div className="md:flex md:flex-row  hidden items-center  gap-2 justify-end">
                             <Button variant="default" className="" size="sm" asChild>
                                 <Link href="https://app.monstro-x.com/dashboard">
                                     Dashboard
