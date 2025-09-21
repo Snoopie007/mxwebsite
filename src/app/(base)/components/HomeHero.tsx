@@ -46,17 +46,15 @@ export function HeroSection() {
                             WebkitMaskImage: 'linear-gradient(180deg, #000, #000 70%, transparent)',
                             maskImage: 'linear-gradient(180deg, #000, #000 70%, transparent)'
                         }}>
-                        <Image src={`/images/monstro-dash.png?v=1`}
-                            alt="Monstro-X Platform Dashboard"
-                            width={1280}
-                            height={1280}
-                            className="p-2 border border-gray-200 rounded-lg"
-                            style={{
-                                background: 'rgba(255, 255, 255, .1)',
-                                WebkitBackdropFilter: 'blur(25px)',
-                                backdropFilter: 'blur(25px)'
-                            }}
-                        />
+                        <div className=" rounded-md p-2 border border-gray-200">
+                            <div className="bg-white rounded-lg overflow-hidden">
+                                <Image src={`/images/monstrox-dash.webp`}
+                                    alt="Monstro-X Platform Dashboard"
+                                    width={1280}
+                                    height={1280}
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
