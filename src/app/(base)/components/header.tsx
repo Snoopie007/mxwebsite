@@ -30,8 +30,6 @@ function Header() {
                                     Dashboard
                                 </Link>
                             </Button>
-                            <AlertMenu />
-                            <SupportMenu />
                             <UserMenu />
                         </div>
                     ) : (
