@@ -19,9 +19,8 @@ export function HeroSection() {
                     <div className="w-[60%] mx-auto space-y-4">
                         <div className="text-center space-y-3">
                             <h1 className={cn('text-4xl leading-tight font-bold font-poppins')}>
-                                {/* Member Management Software That Makes People Want to Show Up
-                                 */}
-                                A  Member Management Software That Actually Grows Your Business
+
+                                Member Management Software That Grows Your Business
                             </h1>
                             <p className="text-lg leading-8 text-muted-foreground">
                                 Monstro-X uses proven behavioral psychology—not gimmicks—to help your members stay consistent,

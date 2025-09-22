@@ -1,12 +1,11 @@
 "use client"
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@public/images/logo.png";
 import MobileNav from "./MobileNav";
 import MainNav from "./nav";
 import { useSession } from "next-auth/react";
 import { Button } from "@/components/ui/button";
-import { AlertMenu, SupportMenu, UserMenu } from "@/components/navs";
+import { UserMenu } from "@/components/navs";
 function Header() {
     const { data: session } = useSession();
     console.log(session);
@@ -16,7 +15,7 @@ function Header() {
                 <div className={"logo flex flex-row align-middle items-center "}>
                     <Link href="/"
                         className="flex h-auto w-full">
-                        <Image src={logo} alt="Monstro" width="90" className="block w-full " />
+                        <Image src={'/images/monstrox-logo.png'} alt="Monstro" height="98" width="120" className="block w-full " />
                     </Link>
                 </div>
                 <div className=' flex-row items-center align-middle justify-center hidden lg:flex ' >

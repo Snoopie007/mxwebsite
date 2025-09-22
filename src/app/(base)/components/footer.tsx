@@ -1,7 +1,5 @@
 import React from 'react'
 import Link from "next/link";
-
-import logo from "@public/images/logo.png";
 import Image from "next/image";
 import { FooterMenu, Industries } from "@/libs/data";
 
@@ -14,7 +12,7 @@ export function Footer() {
                     <div className={"brand"}>
                         <Link href="/"
                             className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-                            <Image src={logo} alt="N" width="120" className="" />
+                            <Image src={`/images/monstrox-white-logo.png`} alt="N" height="98" width="120" className="" />
                         </Link>
                     </div>
                     <div className='text-base  leading-6 mt-5 font-roboto'>
