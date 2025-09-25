@@ -31,10 +31,6 @@ const FAQS = [
         a: "Every Monstro-X membership software plan includes:\n\n- Full gamification engine (points, rewards, streaks, leaderboards)\n- Community chat and posts to build member connection\n- Built-in AI assistant for billing, hours, and FAQs\n- Unlimited members and staff accounts\n- White-labeled CRM (GoHighLevel)\n- Integration with Stripe for payment processing"
     },
     {
-        q: "Is the CRM branded as Monstro-X?",
-        a: "No. The CRM is fully white-labeled and appears under your school's brand, not ours."
-    },
-    {
         q: "Is Monstro-X membership software good for martial arts, music, or fitness schools?",
         a: "Yes. Monstro-X was built specifically for group-class businesses like martial arts academies, dance studios, music schools, and fitness gyms. It's not generic—it's designed to boost retention and referrals in community-based programs."
     },
