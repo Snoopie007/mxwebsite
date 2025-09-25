@@ -4,6 +4,7 @@ import { Plan } from "@/types";
 import Link from "next/link";
 import { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 
 const BASE_FEATURES = [
@@ -17,6 +18,7 @@ const BASE_FEATURES = [
     "Automated Reminders",
     "Gamification",
     "Analytics & Reports",
+    'Unlimited Members & Staff',
     "Member Mobile App",
 ]
 const PLANS: Plan[] = [
@@ -26,10 +28,7 @@ const PLANS: Plan[] = [
         description: "Pay for what you use. 2% transaction fee.",
         features: BASE_FEATURES,
         cycle: "Month",
-        order: 1,
         price: 0,
-        setup: 0,
-        trial: 0,
     },
     {
         id: 2,
@@ -37,21 +36,15 @@ const PLANS: Plan[] = [
         description: "Pay as you go + access to our Monstro Marketing Software.",
         features: BASE_FEATURES.concat(["Monstro Marketing Software"]),
         cycle: "Month",
-        order: 2,
         price: 99,
-        setup: 0,
-        trial: 0,
     },
     {
         id: 3,
         name: "Platinum",
         description: "No transaction fee. Access to all features.",
-        features: BASE_FEATURES.concat([" Monstro Marketing Software"]),
+        features: BASE_FEATURES.concat(["Monstro Marketing Software"]),
         cycle: "Month",
-        order: 3,
         price: 299,
-        setup: 0,
-        trial: 0,
     },
 ]
 export default function PricingTable() {
@@ -67,45 +60,8 @@ export default function PricingTable() {
 
 
     return (
-        <div>
-            <div className="pricingToggle box-content relative flex flex-row items-center justify-between max-w-[200px] m-auto mb-10 bg-slate-200 rounded-md">
-                <div className="flex w-full  flex-row z-10">
-                    <div onClick={() => {
-                        setTerm("Month");
-                    }}
-                        className={cn(
-                            "toggleBox ",
-                            term === "Month" && "active"
-                        )}
-                    >
-                        <p className="opacity-30 text-center z-10 font-semibold">
-                            Monthly
-                        </p>
-                    </div>
-                    <div
-                        onClick={() => {
-                            setTerm("Annual");
-                        }}
-                        className={cn(
-                            "toggleBox ",
-                            term === "Annual" && "active"
-                        )}
-                    >
-                        <p
-                            className="opacity-30 text-center z-10 font-semibold"
-                            data-term="annual"
-                        >
-                            Annually
-                        </p>
-                    </div>
-                </div>
-                <div className={cn(
-                    "toggle ",
-                    term === "Month" ? "left" : "right"
-                )} >
-
-                </div>
-            </div>
+        <div className="space-y-4">
+            <PricingToggle term={term} setTerm={setTerm} />
             <div className="grid gap-3 md:grid-cols-3">
                 {PLANS.map((plan) => (
                     <div key={plan.id} className="border p-6 bg-white rounded-sm">
@@ -144,6 +100,58 @@ export default function PricingTable() {
 
                     </div>
                 ))}
+            </div>
+        </div>
+    );
+}
+
+function PricingToggle({ term, setTerm }: { term: "Month" | "Annual", setTerm: (term: "Month" | "Annual") => void }) {
+    return (
+        <div className="relative flex flex-row items-center max-w-[200px] m-auto mb-10 bg-slate-200 rounded-md p-1">
+            {/* Animated background slider */}
+            <motion.div
+                className="absolute top-1 bottom-1 w-1/2 bg-white rounded-sm shadow-sm"
+                initial={false}
+                animate={{
+                    x: term === "Month" ? "0%" : "100%"
+                }}
+                transition={{
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 30
+                }}
+            />
+
+            {/* Toggle buttons */}
+            <div className="flex w-full flex-row relative z-10">
+                <div
+                    onClick={() => setTerm("Month")}
+                    className="flex-1 py-2 px-4 cursor-pointer"
+                >
+                    <motion.p
+                        className="text-center font-semibold"
+                        animate={{
+                            opacity: term === "Month" ? 1 : 0.6
+                        }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        Monthly
+                    </motion.p>
+                </div>
+                <div
+                    onClick={() => setTerm("Annual")}
+                    className="flex-1 py-2 px-4 cursor-pointer"
+                >
+                    <motion.p
+                        className="text-center font-semibold"
+                        animate={{
+                            opacity: term === "Annual" ? 1 : 0.6
+                        }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        Annually
+                    </motion.p>
+                </div>
             </div>
         </div>
     );

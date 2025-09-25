@@ -4,8 +4,5 @@ export type Plan = {
     description: string
     features: string[]
     cycle: string
-    order: number
     price: number
-    setup: number
-    trial: number
 }
