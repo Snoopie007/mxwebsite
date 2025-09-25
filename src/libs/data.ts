@@ -155,20 +155,29 @@ const Regions = {
     }
 }
 
+type MenuItem = {
+    title: string;
+    href: string;
+    description: string;
+    childs?: MenuItem[];
+}
 
-
-const Menu = [
+const Menu: MenuItem[] = [
     {
-        "title": "Home",
-        "href": "/",
-        "description": "Home",
-        "childs": [
-            {
-                "title": "Home",
-                "href": "/",
-                "description": "Home",
-            }
-        ]
+        "title": "Pricing",
+        "href": "/pricing",
+        "description": "Pricing",
+
+    },
+    {
+        "title": "About",
+        "href": "/about",
+        "description": "About",
+    },
+    {
+        "title": "Contact",
+        "href": "/contact",
+        "description": "Contact",
     }
 ]
 

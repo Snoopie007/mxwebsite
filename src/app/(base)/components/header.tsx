@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { UserMenu } from "@/components/navs";
 function Header() {
     const { data: session } = useSession();
-    console.log(session);
+
     return (
         <header id={"header"} className={`w-full top-0 left-0  px-5 lg:px-0 `}>
             <div className={"flex flex-row align-middle justify-between max-w-7xl py-4 m-auto z-10 relative "}>

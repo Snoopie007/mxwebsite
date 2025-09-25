@@ -42,7 +42,6 @@ export default function MainNav() {
                                 {m.title}
                             </a>
                         )}
-
                     </NavigationMenuItem>
 
                 ))}
