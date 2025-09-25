@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 
 const BASE_FEATURES = [
@@ -20,6 +21,7 @@ const BASE_FEATURES = [
     "Analytics & Reports",
     'Unlimited Members & Staff',
     "Member Mobile App",
+    'Basic Support',
 ]
 const PLANS: Plan[] = [
     {
@@ -49,7 +51,6 @@ const PLANS: Plan[] = [
 ]
 export default function PricingTable() {
     const [term, setTerm] = useState<"Month" | "Annual">("Month");
-
     function calcPrice(price: number) {
         if (term === "Month") {
             return price;
@@ -64,7 +65,8 @@ export default function PricingTable() {
             <PricingToggle term={term} setTerm={setTerm} />
             <div className="grid gap-3 md:grid-cols-3">
                 {PLANS.map((plan) => (
-                    <div key={plan.id} className="border p-6 bg-white rounded-sm">
+                    <div key={plan.id} className="border p-6 bg-white rounded-sm"
+                    >
                         <div className="mb-6 text-left space-y-2">
                             <div className="text-indigo-500 text-xl font-semibold">{plan.name}</div>
                             <p className=" text-left text-base">
@@ -97,10 +99,15 @@ export default function PricingTable() {
                                 ))}
                             </ul>
                         </div>
-
+                        <Button className="w-full" variant="foreground" size="lg" asChild>
+                            <Link href={`https://app.monstro-x.com/join?p=${plan.id}`}>
+                                Get Started
+                            </Link>
+                        </Button>
                     </div>
                 ))}
             </div>
+
         </div>
     );
 }
