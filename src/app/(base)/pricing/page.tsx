@@ -55,7 +55,7 @@ export default async function Pricing() {
         <main id="pricing">
             <section className="  bg-gradient-to-b py-16  from-transparent to-slate-100 relative">
                 <div className="mx-auto max-w-4xl  text-center">
-                    <h1 className=" mb-4 font-poppins">
+                    <h1 className=" font-poppins">
                         Plans and Pricing
                     </h1>
                     <p className="text-xl leading-8 text-gray-700 mb-5">
