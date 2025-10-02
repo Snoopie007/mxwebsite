@@ -100,7 +100,7 @@ export default async function SchedulePage(props: { params: Promise<{ type: stri
                             </p> */}
                         </div>
                         <div id="schdeduler" className="shadow-sm">
-                            <iframe src="https://api.mymonstro.com/widget/booking/5ZNpRE8cfhy7ARSkE5nA" style={{ width: "100%", border: "none", overflow: "hidden" }} scrolling="no" id="b3HqA0PhB9EN8FMu6fm2_1758641395192" />
+                            <iframe src="https://api.mymonstro.com/widget/booking/fR0rW07qbEgNrIZc0aHb" style={{ width: "100%", border: "none", overflow: "hidden" }} scrolling="no" id="VCsgMtByKdaEzd7YkzL0_1759434855314"></iframe>
                             <Script src="https://api.mymonstro.com/js/form_embed.js" strategy="afterInteractive" type="text/javascript" />
                         </div>
                     </div>

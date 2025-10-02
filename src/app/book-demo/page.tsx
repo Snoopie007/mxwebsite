@@ -2,7 +2,6 @@
 import BookDemoForm from "@/app/book-demo/DemoForm";
 import 'react-toastify/dist/ReactToastify.css';
 import TestimonialCarousel from "./TestimonialCarousel";
-import Script from "next/script";
 import { Suspense } from "react";
 
 export default function BookDemoPage() {
